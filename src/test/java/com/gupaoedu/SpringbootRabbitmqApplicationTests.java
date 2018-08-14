@@ -1,7 +1,9 @@
 package com.gupaoedu;
 
+import com.gupaoedu.provider.HelloProvider;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -9,8 +11,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class SpringbootRabbitmqApplicationTests {
 
+	@Autowired
+	private HelloProvider helloProvider;
+
 	@Test
-	public void contextLoads() {
+	public void hello() {
+		helloProvider.send();
 	}
 
 }
