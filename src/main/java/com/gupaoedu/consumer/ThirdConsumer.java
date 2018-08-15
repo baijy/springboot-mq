@@ -5,10 +5,10 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@RabbitListener(queues = "FIRST_QUEUE")
-public class FirstConsumer {
+@RabbitListener(queues = "THIRD_QUEUE")
+public class ThirdConsumer {
     @RabbitHandler
     public void process(String msg){
-        System.out.println("First Queue received msg: " + msg);
+        System.out.println("Third Consumer received msg : "+ msg);
     }
 }

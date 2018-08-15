@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringbootRabbitmqApplicationTests {
+public class MqAppTests {
 
 	@Autowired
 	private HelloProvider helloProvider;

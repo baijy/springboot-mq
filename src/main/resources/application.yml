@@ -4,12 +4,3 @@ spring:
     username: guest
     password: guest
     virtual-host: /
-
-my:
-  queue:
-    first: FIRST_QUEUE
-    second: SECOND_QUEUE
-    third: THIRD_QUEUE
-  exchange:
-    topic: TOPIC_EXCHANGE
-    fanout: FANOUT_EXCHANGE

@@ -4,9 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootRabbitmqApplication {
-
+public class MqApp {
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootRabbitmqApplication.class, args);
+		SpringApplication.run(MqApp.class, args);
 	}
 }
